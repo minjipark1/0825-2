@@ -17,6 +17,29 @@ th, td {
   text-align: left;    
 }
 
+.box1{
+   border-radius:0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  box-shadow : 10px 10px 5px; 
+}
+
+
+.box2{
+   border-radius:0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+  box-shadow : 10px 10px 5px; 
+}
+
 div.inner {
 	background : red;
 	padding : 20px;
@@ -35,14 +58,17 @@ div.inner {
       <th colspan="2"></th>
     </tr>
     <tr>
-      <td><p style="border: 3px solid black">인적실수</p></div></td>
-	  <td><p style="border: 3px solid black">기계결함</p></td>
-	  <td><p style="border: 3px solid black">계측결함</p></td>
-	  <td><p style="border: 3px solid red">전기결함</p></td>
-	  <td><p style="border: 3px solid black">외부영향</p></td>
-	  <td><p style="border: 3px solid black">기타</p></td>
-    </tr>
 
+		<td><div class="box2"><font color="white">인적실수</font></div></td>
+		<td><div class="box2"><font color="white">기계결함</font></div></td>
+		<td><div class="box2"><font color="white">계측결함</font></div></td>
+	</tr>
+	<tr></tr>
+		<td><div class="box1"><font color="white">전기결함</font></div></td>
+		<td><div class="box2"><font color="white">외부영향</font></div></td>
+		<td><div class="box2"><font color="white">기타</font></div></td>
+    </tr>
+</table>
 
 
 <p><li><b>재발여부 O <mark>X</markr></b></p></li>
